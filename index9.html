@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Основы javascript - 1.9</title>
+</head>
+<body>
+  <button onclick="myFunction()">Нажми меня, please!</button>
+  <p id="n"></p>
+  <p id="a"></p>
+  <script>
+    //объявляем переменные admin и name
+    let name = "Виталий Валентинович";
+    let admin = name;
+    alert(admin);
+    function myFunction() {
+      let admin = "Вадим Игоревич";
+      let name = "Виталий Валентинович";
+      document.getElementById("n").innerHTML=name;
+      document.getElementById("a").innerHTML=admin;
+    }
+  </script>
+</body>
+</html>
